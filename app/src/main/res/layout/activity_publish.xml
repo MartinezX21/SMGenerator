@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Publish">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorWhite"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/publish_hint_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/publish_hint"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/publish_description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/description_edit_text"
+                android:text="@string/description_text" />
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/description_text"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/subject_validity_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/validity_text" />
+
+            <CalendarView
+                android:id="@+id/publish_date_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/publish_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/text_publish_content"
+                android:text="@string/publish_content" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/text_publish_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_upload_file"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginRight="24dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_app_upload" />
+
+        <ImageButton
+            android:id="@+id/btn_camera_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_app_add_photo" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

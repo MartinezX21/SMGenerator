@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root id="facinfo">
+  <subject code="MI" name="Math-Info" description="Mathematics and Computer Science">
+    <subject code="MA" name="Math" description="Mathematics">
+      <subject code="ALS" name="Analyse" description="Analyse"/>
+      <subject code="ALG" name="Algebre" description="Algebre"/>
+    </subject>
+    <subject code="IN" name="Info" description="Computer Science">
+      <subject code="RSD" name="Reseau" description="Networks and Distributed Services"/>
+    </subject>
+  </subject>
+  <subject code="PHY" name="Physique" description="Physique"/>
+  <subject code="CHY" name="Chimie" description="Chimie"/>
+</root>

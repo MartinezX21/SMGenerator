@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SMGenerator</string>
+    <string name="subject_root_element_id">facinfo</string>
+    <string name="action_start_scan">Démarer le scan</string>
+    <string name="action_stop_scan">Arreter le scan</string>
+    <string name="search_title">Recherche</string>
+    <string name="search_hint">Nom du suje t</string>
+    <string name="title_activity_events">Publications</string>
+    <string name="publish_hint">Publier un fichier ou une photo</string>
+    <string name="description_text">Description</string>
+    <string name="validity_text">Valide jusqu\'au</string>
+    <string name="publish_content">Contenu</string>
+    <string name="publish_submit">Publier</string>
+    <string name="error_missing_permissions">Impossible de démarrer l\'application sans les droits nécessaires</string>
+    <string name="channel_name">SMGC</string>
+    <string name="channel_description">SMGenerator Notification Channel</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:paddingEnd="4dp">
+
+    <ImageView
+        android:id="@+id/event_view_image"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/event_view_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Subject"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/event_view_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_view_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:maxLines="1"
+        android:text="Description"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@+id/event_view_image"
+        app:layout_constraintTop_toBottomOf="@+id/event_view_subject" />
+
+    <ImageView
+        android:id="@+id/event_view_calendar"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@+id/event_view_pubdate"
+        app:layout_constraintTop_toBottomOf="@+id/event_view_descr"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <TextView
+        android:id="@+id/event_view_pubdate"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="publication date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/event_view_descr"
+        app:layout_constraintTop_toBottomOf="@+id/event_view_descr" />
+
+    <TextView
+        android:id="@+id/event_view_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validity"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/event_view_subject"
+        app:layout_constraintEnd_toStartOf="@+id/event_view_alarm" />
+
+    <ImageButton
+        android:id="@+id/event_view_alarm"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_app_clock" />
+</android.support.constraint.ConstraintLayout>
